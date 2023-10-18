@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Temperatura</title>
+</head>
+<style>
+    body{
+        font-size: x-large;
+        text-align: center;
+        background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);
+        background-position: center;
+        background-size: 150%;
+    }
+    button{
+        background-color: darkblue;
+        border-color: aquamarine;
+        color: aliceblue;
+        height: 50px;
+        width: 120px;
+        font-size: 20px;
+    }
+  
+    button:hover{
+        background-color: rgb(41, 41, 138);
+        height: 60px;
+        width: 130px;
+        font-size: 22px;
+    }
+    
+</style>
+<body>
+    <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Conversão de Temperaturas</h1>
+    <input style="height:30px; width: 250px; font-size: 20px;" type="numeber" id="campo"><br><br>
+    <input id="cf" type="radio" name="t">Celsius para Farenheit</input><br>
+    <input id="ck" type="radio" name="t">Celsius para Kelvin</input><br>
+    <input id="kc" type="radio" name="t">Kelvin para Celsius</input><br>
+    <input id="kf" type="radio" name="t">Kelvin para Farenheit</input><br>
+    <input id="fk" type="radio" name="t">Farenheit para Kelvin</input><br>
+    <input id="fc" type="radio" name="t">Farenheit para Celsius</input><br><br>
+    <button onclick="converte()">Converter</button><br>
+    <p style="font-size: 35px;"id="resultado">resultado</p><br><br>
+    <button onclick="Inicio()">Página inicial</button>
+
+</body>
+</html>
+<script>
+    function Inicio(){
+        window.location.href="PaginaInicial.html"
+    }
+</script>

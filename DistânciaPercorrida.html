@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       background-color: dimgray;
+       background-size: 150%;
+       text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+        background-color:rgb(37, 37, 37);
+        color: white;
+        border-color: white;
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+    }
+    button:hover{
+        background-color:rgb(58, 58, 58) ;
+        height: 60px;
+        width: 130px;
+        font-size: 22px;
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <h1>Calculadora para Gasto de combustivel por km</h1>
+
+    <h4 style="font-size: 20px;">Qual foi a Distância percorrida? (em Km)</h4>
+    <input type="number3" id="campo3"><br>
+    <h4 style="font-size: 20px;">Quantos litros de combutivel você gastou?</h4>
+    <input type="number4" id="campo4"><br><br>
+    <button onclick="Calcular2()">Calcular</button>
+    <p style="font-size: 30px;" id="Resultado1">Resultado</p><br><br><br> 
+    <button onclick="Inicio()">Página inicial</button>
+</body>
+</html>
+<script>
+    function Inicio(){
+        window.location.href="PaginaInicial.html"
+    }
+    function Calcular2(){
+        var Distancia = Number(document.getElementById("campo3").value)
+        var Combustivel = Number(document.getElementById("campo4").value)
+        var Resultado = 0
+
+        Resultado = "A autonomia do carro é de " +Distancia/Combustivel+" Km/L"
+        
+        document.getElementById("Resultado1").innerHTML = Resultado
+   }
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade1</title>
+</head>
+<style>
+    body{
+       background-color:rgb(180, 255, 68);
+       background-size: 150%;
+       text-align: center;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+        background-color: darkgreen;
+        color: white;
+        border-color: white;
+        height: 50px;
+        width: 120px;
+        font-size: 20px;
+    }
+    button:hover{
+        background-color: rgb(58, 155, 58);
+        height: 60px;
+        width: 130px;
+        font-size: 22px;
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <h1 style="font-size: 40px;">Check do preço para pagar</h1>
+    <h4 style="font-size: 20px;">Escreva aqui o preço do produto que deve pagar:</h4>
+    <input type="number1" id="campo1"><br>
+    <h4 style="font-size: 20px;">Escreva aqui o quanto você pagou neste produto:</h4>
+    <input type="number2" id="campo2"><br><br>
+    <button onclick="Calcular()">Calcular</button>
+    <p id="Resultado1">Resultado</p><br><br><br>
+    <button onclick="Inicio()">Página inicial</button>
+</body>
+</html>
+<script>
+    function Inicio(){
+        window.location.href="PaginaInicial.html"
+    }
+
+    function Calcular(){
+        var preco = document.getElementById("campo1").value
+        var pago = document.getElementById("campo2").value
+        var diferenca = pago-preco
+        
+        if(diferenca<0){
+            document.getElementById("Resultado1").innerHTML = "Ainda falta pagar R$"+diferenca*-1
+        }   
+        else{
+            document.getElementById("Resultado1").innerHTML = "Foi Totalmente pago com o troco de R$"+diferenca
+        }
+
+
+       
+    } 
+</script>

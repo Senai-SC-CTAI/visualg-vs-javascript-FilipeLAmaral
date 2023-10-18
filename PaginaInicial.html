@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(215deg, #2d2d2d,#000000);
+        text-shadow: black;
+        background-position: top;
+        background-size: 100%;
+        text-align: center;
+        height: 150vh;
+    }
+    h1{
+        color: #e3fbff;
+        text-transform: var(50px);
+        text-align: center;
+        font-size: 50px;
+        font-family:monospace;
+    }
+    button{
+        font-size: 20px;
+        height: 50px;
+        background-position: center;
+        width: 200px;
+        background-color:#01079D;
+        border-color:white;
+        color: white;
+    }   
+    button:hover{
+        background-color:#4044bf;
+        height: 60px;
+        width: 220px;
+        font-size: 22px;
+    }
+    
+</style>
+<body>
+    <h1 style="color: #e3fbff" id="titulo">Bem vindo!</h1>
+    <h1>Página Inicial</h1><br><br><br><br>
+    <button onclick="Temperaturas()">Temperaturas</button><br><br><br>
+    <button onclick="biografia()">Biografia</button><br><br><br>
+    <button onclick="novaGuia()">Nova Guia</button><br><br><br>
+    <button onclick="CheckPreco()">Check de Preço</button><br><br><br>
+    <button onclick="Distancia()">Distância percorrida</button><br><br><br>
+    <button onclick="Numerospares()">Contador De números Pares</button><br><br><br>
+        <div>
+            <button onclick="voltar()">Voltar</button>
+        </div>
+</body>
+</html>
+<script>
+    function biografia(){
+        window.location.href="biografia.html"
+    }
+    function Temperaturas(){
+        window.location.href="Temperaturas.html"
+    }  
+    function novaPagina(){
+        
+    }  
+    function novaGuia(){
+        window.open("Temperaturas.html")
+    }
+    function CheckPreco(){
+        window.location.href="CheckPreço.html"
+    }
+    function Distancia(){
+        window.location.href="DistânciaPercorrida.html"
+    }
+    function Numerospares(){
+        window.location.href="NúmerosPares.html"
+    }
+</script>
+<script src="script_home.js"></script>
+</html>

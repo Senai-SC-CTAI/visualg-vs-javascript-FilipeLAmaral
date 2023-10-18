@@ -1,72 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ativdade</title>
-    <style>
-        body{
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: x-large;
-            background-color:slategrey;
-            background-size: 150%;
-            background-position: center;
-        }
-        h1{
-            text-align: center;
-        }
-        head{
-            text-align: center;
-        }
-        button{
-            font-size: 25px;
-        }
-        button:hover{
-            background-color: rgb(165, 197, 186);
-            color:rgb(0, 0, 0);
-            
-        }
-    </style>     
-    </head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home-page</title>
+</head>
 <body>
-    <h1>Algoritimo 55 em java</h1><br><br>
-    <input id="A" type="radio">A) Falar com atendente</input><br>
-    <input id="B" type="radio">B) Falar com o RH</input><br>
-    <input id="C" type="radio">C) Falar com o Gerente</input><br>
-    <input id="D" type="radio">D) Sair</input><br><br><br>
-    <button onclick="Calculo()">Mostrar Resultado</button>
-    <p id="final">Resultado</p><br><br><br><br>
-    <button onclick="codigovs()">Código Vs</button>
-    <button onclick="codigovg()">Código Portugol</button>
+    <h1 style="text-align: center; color: #e3fbff">Página inicial</h1>
+    <div class="login">
+        <h3 style="color: #e3fbff">Login</h3>
+        <input type="text" placeholder="Digite seu login" id="login"><br><br>
+        <input type="password" placeholder="Digite sua senha" id="password"><br><br>
+        <button onclick="logar()">Logar</button><br><br>
+    </div><br><br><br>
+    <h4 style="color: #e3fbff" >Não tem conta?</h4>    
+    <button style="position: absolute; top: 90%; left: 44%;" onclick="Registrar()">Criar conta</button>
+    <script src="script.js"></script>
 </body>
 </html>
-<script>
-    function codigovg(){
-        window.location.href="Codigovg.html"
+<style>
+    h4{
+        top: 80%;
     }
-    function codigovs(){
-        window.location.href="Codigovs.html"
-    }
-    function Calculo(){
-    var final = 0
-    if (document.getElementById("A").checked){
-        final = "Opção para Falar com o atendente selecionada."
-     }
-     else if (document.getElementById("B").checked){
-        final = "Opção para Falar com o RH selecionada."
-     }
-     else if(document.getElementById("C").checked){
-        final = "Opção para Falar com o Gerente selecionada."
-     }
-     else if(document.getElementById("D").checked){
-        final = "Opção para Sair selecionada."
-     }
-     else{
-        final = "error! selecione uma opção"
-        alert(final)
-     }
-    document.getElementById("final").innerHTML = final
-}
-</script>
+</style>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contagem()">Contagem regressiva</button>
+    <p id="resultado">resultado</p>
+</body>
+</html>
+<script>
+    function contagem(){
+        var resultado = 0
+        let i = 10
+        while(i > 0){
+            resultado = i;
+            i--;
+            console.log(resultado)
+        }
+    document.getElementById(resultado).innerHTML = "feliz ano novo"
+    }
+</script>
